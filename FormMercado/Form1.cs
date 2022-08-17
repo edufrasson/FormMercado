@@ -126,7 +126,8 @@ namespace FormMercado
             {
                 this.ValorTotalVenda -= Convert.ToDouble(dgvProdutos.CurrentRow.Cells["colTotalProduto"].Value);
                 dgvProdutos.Rows.RemoveAt(dgvProdutos.CurrentRow.Index);
-                lblValorTotalVenda.Text = this.ValorTotalVenda.ToString();
+                lblValorTotalVenda.Text = this.ValorTotalVenda.ToString("C");
+                txtQuantSelecionada.Text = "";
                 lblTotalItensVenda.Text = (dgvProdutos.RowCount - 1).ToString();
             }            
         }
