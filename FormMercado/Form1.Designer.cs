@@ -39,6 +39,11 @@
             this.btnInserir = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
+            this.colCodProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDescricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colValorUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTotalProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtQuantSelecionada = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -49,92 +54,87 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lblValorTotalVenda = new System.Windows.Forms.Label();
             this.lblTotalItensVenda = new System.Windows.Forms.Label();
-            this.colCodProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDescricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colValorUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTotalProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(62, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 20);
+            this.label1.Size = new System.Drawing.Size(101, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cód. Venda";
             // 
             // txtCodVenda
             // 
             this.txtCodVenda.Enabled = false;
-            this.txtCodVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodVenda.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodVenda.ForeColor = System.Drawing.Color.Black;
             this.txtCodVenda.Location = new System.Drawing.Point(170, 9);
             this.txtCodVenda.Name = "txtCodVenda";
             this.txtCodVenda.ReadOnly = true;
-            this.txtCodVenda.Size = new System.Drawing.Size(60, 26);
+            this.txtCodVenda.Size = new System.Drawing.Size(60, 28);
             this.txtCodVenda.TabIndex = 1;
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescricao.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricao.Location = new System.Drawing.Point(170, 51);
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(244, 26);
+            this.txtDescricao.Size = new System.Drawing.Size(244, 28);
             this.txtDescricao.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(62, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 20);
+            this.label2.Size = new System.Drawing.Size(84, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "Descrição";
             // 
             // txtValorUnit
             // 
-            this.txtValorUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorUnit.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorUnit.Location = new System.Drawing.Point(170, 92);
             this.txtValorUnit.Name = "txtValorUnit";
-            this.txtValorUnit.Size = new System.Drawing.Size(60, 26);
+            this.txtValorUnit.Size = new System.Drawing.Size(60, 28);
             this.txtValorUnit.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(62, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(93, 22);
             this.label3.TabIndex = 4;
             this.label3.Text = "Valor Unit.";
             // 
             // txtQuant
             // 
-            this.txtQuant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuant.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuant.Location = new System.Drawing.Point(170, 132);
             this.txtQuant.Name = "txtQuant";
-            this.txtQuant.Size = new System.Drawing.Size(60, 26);
+            this.txtQuant.Size = new System.Drawing.Size(60, 28);
             this.txtQuant.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(66, 135);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.Size = new System.Drawing.Size(63, 22);
             this.label4.TabIndex = 6;
             this.label4.Text = "Quant.";
             // 
             // btnInserir
             // 
-            this.btnInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInserir.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInserir.Location = new System.Drawing.Point(442, 111);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(109, 44);
@@ -145,7 +145,7 @@
             // 
             // btnRemover
             // 
-            this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemover.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemover.Location = new System.Drawing.Point(600, 111);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(109, 44);
@@ -170,6 +170,36 @@
             this.dgvProdutos.Size = new System.Drawing.Size(639, 211);
             this.dgvProdutos.TabIndex = 10;
             this.dgvProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellClick);
+            // 
+            // colCodProduto
+            // 
+            this.colCodProduto.HeaderText = "Cód. Produto";
+            this.colCodProduto.Name = "colCodProduto";
+            this.colCodProduto.ReadOnly = true;
+            // 
+            // colDescricao
+            // 
+            this.colDescricao.HeaderText = "Descrição";
+            this.colDescricao.Name = "colDescricao";
+            this.colDescricao.ReadOnly = true;
+            // 
+            // colValorUnit
+            // 
+            this.colValorUnit.HeaderText = "Valor Unitário";
+            this.colValorUnit.Name = "colValorUnit";
+            this.colValorUnit.ReadOnly = true;
+            // 
+            // colQuantidade
+            // 
+            this.colQuantidade.HeaderText = "Quantidade";
+            this.colQuantidade.Name = "colQuantidade";
+            this.colQuantidade.ReadOnly = true;
+            // 
+            // colTotalProduto
+            // 
+            this.colTotalProduto.HeaderText = "Total do produto";
+            this.colTotalProduto.Name = "colTotalProduto";
+            this.colTotalProduto.ReadOnly = true;
             // 
             // txtQuantSelecionada
             // 
@@ -275,36 +305,6 @@
             this.lblTotalItensVenda.Size = new System.Drawing.Size(64, 25);
             this.lblTotalItensVenda.TabIndex = 20;
             this.lblTotalItensVenda.Text = "label8";
-            // 
-            // colCodProduto
-            // 
-            this.colCodProduto.HeaderText = "Cód. Produto";
-            this.colCodProduto.Name = "colCodProduto";
-            this.colCodProduto.ReadOnly = true;
-            // 
-            // colDescricao
-            // 
-            this.colDescricao.HeaderText = "Descrição";
-            this.colDescricao.Name = "colDescricao";
-            this.colDescricao.ReadOnly = true;
-            // 
-            // colValorUnit
-            // 
-            this.colValorUnit.HeaderText = "Valor Unitário";
-            this.colValorUnit.Name = "colValorUnit";
-            this.colValorUnit.ReadOnly = true;
-            // 
-            // colQuantidade
-            // 
-            this.colQuantidade.HeaderText = "Quantidade";
-            this.colQuantidade.Name = "colQuantidade";
-            this.colQuantidade.ReadOnly = true;
-            // 
-            // colTotalProduto
-            // 
-            this.colTotalProduto.HeaderText = "Total do produto";
-            this.colTotalProduto.Name = "colTotalProduto";
-            this.colTotalProduto.ReadOnly = true;
             // 
             // Form1
             // 
