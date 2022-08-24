@@ -66,7 +66,7 @@ namespace FormMercado
             {
                 double valor_total_produto = calcularValorTotalProduto(txtQuant.Text, txtValorUnit.Text);
                 this.CodProduto++;
-                string[] row = {this.CodProduto.ToString(),txtDescricao.Text, txtQuant.Text, txtValorUnit.Text, valor_total_produto.ToString() };
+                string[] row = {this.CodProduto.ToString(),txtDescricao.Text, txtValorUnit.Text, txtQuant.Text, valor_total_produto.ToString() };
 
                 dgvProdutos.Rows.Add(row);
                 lblTotalItensVenda.Text = (dgvProdutos.RowCount - 1).ToString();
